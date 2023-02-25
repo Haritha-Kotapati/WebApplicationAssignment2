@@ -11,8 +11,18 @@ namespace WebApplicationAssignment.Controllers
     {
         [HttpGet]
         [Route("api/J1problem/Menu/{b}/{d}/{s}/{ds}")]
+
+        
+
         public string Menu(int b, int d, int s, int ds)
         {
+
+            /// <summary>
+            /// This method returns value of total calories selected on the menu items
+            /// <menu> GET api/addten/{id} </menu>
+            /// </summary>
+            /// <returns> burgerCalories[b-1] + drinkCalories[d-1] + sidecalories[s-1] + dessertCalories[ds-1] </returns>
+            /// 
             int[] burgerCalories = { 461, 431, 420, 0 };
             int[] drinkCalories = { 130, 160, 118, 0 };
             int[] sidecalories = { 100, 57, 70, 0 };

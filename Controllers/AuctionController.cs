@@ -28,15 +28,22 @@ namespace WebApplicationAssignment.Controllers
             return View();
         }
        
+        /// <summary>
+        /// This method returns the name & value of maximum amount bidded 
+        /// </summary>
+        /// <param name="personName"></param>
+        /// <param name="maxAmountBidded"></param>
+        /// <returns></returns>
         public ActionResult Winner(string personName, int maxAmountBidded)
         {
-            //int maxAmount;
-            //for (int i = 1; i )
+            
             ViewData["name"] = personName;
             ViewData["amount"] = maxAmountBidded;
             return View();
         }
         [HttpPost]
+        
+        ///List to save the input data and hold it as an array
         public ActionResult FindWinner(List<string> personNames, List<int> amountsBidded)
         {
             string personName = String.Empty;
@@ -45,11 +52,8 @@ namespace WebApplicationAssignment.Controllers
 
             personName = personNames[maxIndex];
 
-            //   names.Add(ViewData["personName3"].ToString());
-
             return RedirectToAction("Winner", "Auction", new { personName, maxAmountBidded });
-            //return View();
-          // ViewData["amountBidded"] = bidAmounts.Append(amountBidded);
+           
 
         }
     }

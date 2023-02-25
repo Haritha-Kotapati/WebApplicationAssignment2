@@ -159,6 +159,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\J1ProblemController.cs" />
     <Compile Include="Controllers\J2ProblemController.cs" />
+    <Compile Include="Controllers\RobbersLanguageController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -218,6 +219,8 @@
     <Content Include="Views\Auction\Welcome.cshtml" />
     <Content Include="Views\Auction\StartAuction.cshtml" />
     <Content Include="Views\Auction\Winner.cshtml" />
+    <Content Include="Views\RobbersLanguage\Word.cshtml" />
+    <Content Include="Views\RobbersLanguage\RobbersResult.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
